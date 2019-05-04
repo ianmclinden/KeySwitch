@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map for KeySwitch
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+KeySwitch	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+update	KEYWORD2
+isKeyDown	KEYWORD2
+isKeyUp	KEYWORD2
+isPressed	KEYWORD2
+isKeyHeld	KEYWORD2
+onKeyDown	KEYWORD2
+onKeyUp	KEYWORD2
+onPressed	KEYWORD2
+onKeyHeld	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+# None
