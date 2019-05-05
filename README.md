@@ -18,6 +18,13 @@ Demonstrates setting simple button bindings using pre-defined void->void functio
 ### [Lambda](https://github.com/ianmclinden/KeySwitch/blob/master/examples/Lambda/Lambda.ino)
 Demonstrates use of C++ lamabdas for cleaner callback handling.
 
+### [MacroPad](https://github.com/ianmclinden/KeySwitch/blob/master/examples/MacroPad/MacroPad.ino)
+Create a 2-Key macro keypad that copies and pastes.
+Note: Given example uses the TrinketKeyboard library for the ATtiny85 (Digispark, etc), but other keyboard libraries can be used as well.
+
+### [LEDCycle](https://github.com/ianmclinden/KeySwitch/blob/master/examples/LEDCycle/LEDCycle.ino)
+Re-implement of [Adafruit NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) butoncycler example.
+
 
 # License and Author
 2019 Ian McLinden under the [GNU General Public License v3.0](/LICENSE).
