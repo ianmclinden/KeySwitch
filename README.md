@@ -26,7 +26,7 @@ Note: Given example uses the TrinketKeyboard library for the ATtiny85 (Digispark
 Re-implement of [Adafruit NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) butoncycler example.
 
 
-# *Class:* KeySwitch
+# **Class:** KeySwitch
 
 ## Constructors:
 
@@ -100,7 +100,7 @@ Bind a callback that triggers once, every time the button is released.
 | `callback` | `void *` | Function to invoke when button is released |
 
 
-### `void onPressed(void (*callback)());
+### `void onPressed(void (*callback)());`
 
 Bind a callback that triggers continuously as long as the button is pressed.
 
@@ -112,7 +112,6 @@ Bind a callback that triggers continuously as long as the button is pressed.
 ### `void onKeyHeld(void (*callback)(), uint16_t hold_time);`
 
 Bind a callback that triggers once, every time the button is held longer than `hold_time`.
-
 
 | Name | Type | Description |
 |------|------|-------------|
