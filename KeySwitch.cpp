@@ -44,10 +44,10 @@ void KeySwitch::update(void) {
     _rd = _invert ? !_rd : _rd;
 
     if (_rd != _lastState) {
-        _lastTimeout = millis();
+        _lastTimeout = (uint16_t)millis();
     }
 
-    if ((unsigned long)(millis() - _lastTimeout) >= 25UL ) {
+    if ((uint16_t)(millis() - _lastTimeout) >= 25 ) {
 
         // If the state has changed handle onKeyDown && onKeyUp
         if (_rd != _state) {
@@ -66,7 +66,7 @@ void KeySwitch::update(void) {
                 _cb_pressed();
         }
 
-        if ((unsigned long)(millis() - _lastTimeout) >= _hold_time) {
+        if ((uint16_t)(millis() - _lastTimeout) >= _hold_time) {
             if (_rd != _held) {
                 _held = _rd;
 
@@ -103,7 +103,7 @@ void KeySwitch::onKeyUp(void (*callback)()) {
 void KeySwitch::onPressed(void (*callback)()){
     _cb_pressed = callback;
 }
-void KeySwitch::onKeyHeld(void (*callback)(), unsigned long hold_time) {
+void KeySwitch::onKeyHeld(void (*callback)(), uint16_t hold_time) {
     _cb_keyheld = callback;
     _hold_time = hold_time;
 }

@@ -16,7 +16,7 @@ class KeySwitch {
         void onKeyDown(void (*callback)());
         void onKeyUp(void (*callback)());
         void onPressed(void (*callback)());
-        void onKeyHeld(void (*callback)(), unsigned long hold_time);
+        void onKeyHeld(void (*callback)(), uint16_t hold_time);
 
     private:
         uint8_t _pin_mask;
@@ -32,8 +32,8 @@ class KeySwitch {
         bool _lastState;
         bool _held;
         bool _enabled;
-        unsigned long _lastTimeout;
-        unsigned long _hold_time;
+        uint16_t _lastTimeout;
+        uint16_t _hold_time;
 };
 
 #endif //__H_KEY_SWITCH__
