@@ -30,7 +30,7 @@ Re-implement of [Adafruit NeoPixel](https://github.com/adafruit/Adafruit_NeoPixe
 
 ## Constructors:
 
-### `KeySwitch(uint8_t pin, bool invert=false);`
+### [`KeySwitch(uint8_t pin, bool invert=false);`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L5-L31)
 
 Bind digital pin state changes to function callbacks.
 
@@ -44,45 +44,45 @@ Bind digital pin state changes to function callbacks.
 
 ## Methods:
 
-### `void begin(void);`
+### [`void begin(void);`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L34-L50)
 
 Bind to the digital IO pin and begin listening to the switch.
 
 
-### `void update(void);`
+### [`void update(void);`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L53-L109)
 
 Poll IO state for changes. Triggers callbacks if bound.
 
 
-### `bool isKeyDown(void) const;`
+### [`bool isKeyDown(void) const;`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L112-L114)
 
 Is the button currently down? See: [isPressed](#bool-ispressedvoid-const)
 
 **Returns:** `bool` `TRUE` if the button is down.
 
 
-### `bool isKeyUp(void) const;`
+### [`bool isKeyUp(void) const;`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L115-L117)
 
 Is the button currently up?
 
 **Returns:** `bool` `TRUE` if the button is up.
 
 
-### `bool isPressed(void) const;`
+### [`bool isPressed(void) const;`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L118-L120)
 
 Is the button currently pressed?
 
 **Returns:** `bool` `TRUE` if the button is pressed.
 
 
-### `bool isKeyHeld(void) const;`
+### [`bool isKeyHeld(void) const;`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L121-L123)
 
 Is the button currently held?
 
 **Returns:** `bool` `TRUE` if the button has been held for longer than the configured timeout.
 
 
-### `void onKeyDown(void (*callback)());`
+### [`void onKeyDown(void (*callback)());`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L126-L128)
 
 Bind a callback that triggers once, every time the button is pressed.
 
@@ -91,7 +91,7 @@ Bind a callback that triggers once, every time the button is pressed.
 | `callback` | `void *` | Function to invoke when button is pressed |
 
 
-### `void onKeyUp(void (*callback)());`
+### [`void onKeyUp(void (*callback)());`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L129-L131)
 
 Bind a callback that triggers once, every time the button is released.
 
@@ -100,7 +100,7 @@ Bind a callback that triggers once, every time the button is released.
 | `callback` | `void *` | Function to invoke when button is released |
 
 
-### `void onPressed(void (*callback)());`
+### [`void onPressed(void (*callback)());`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L132-L134)
 
 Bind a callback that triggers continuously as long as the button is pressed.
 
@@ -109,7 +109,7 @@ Bind a callback that triggers continuously as long as the button is pressed.
 | `callback` | `void *` | Function to invoke when the button is pressed |
 
 
-### `void onKeyHeld(void (*callback)(), uint16_t hold_time);`
+### [`void onKeyHeld(void (*callback)(), uint16_t hold_time);`](https://github.com/ianmclinden/KeySwitch/blob/847e197b657ff05f64a665fe67f76d9af2d6ff5f/KeySwitch.cpp#L134-L138)
 
 Bind a callback that triggers once, every time the button is held longer than `hold_time`.
 
